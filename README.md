@@ -8,7 +8,7 @@ This code repository contains the implementation and analysis for the study of [
 
 <center>
 <figure>
-  <img src="/images/temperature.png" width="700" />
+  <img src="webpage/images/temperature.png" width="700" />
   <figcaption>European air temperature anomalies (<a href="https://climate.copernicus.eu/european-heatwave-july-2023-longer-term-context">source</a>)</figcaption>
 </figure>
 </center>
@@ -43,7 +43,7 @@ The following table lists the key data sources used in this study:
 
 
 ## Methodology
-![Alt text](/images/framework.png)
+![Alt text](webpage/images/Framework_2025.png)
 The methodology employed in this study includes the following key components:
 
 - **Future Heatwave Projection:** It generates projected heatwave events from 2025 to 2050 based on historical heatwaves from 2019 and 2022.
