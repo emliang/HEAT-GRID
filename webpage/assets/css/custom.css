@@ -1,3 +1,17 @@
+.arrow {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.arrow.up {
+    color: #ff5555; /* Red for increasing risk */
+}
+
+.arrow.down {
+    color: #ff5555; /* Red for decreasing capacity (still increasing risk) */
+}
+
 .banner {
     position: relative;
     width: 100%;

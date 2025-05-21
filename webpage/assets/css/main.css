@@ -4843,6 +4843,192 @@ input, select, textarea {
 		opacity: 0;
 	}
 
+
+	/* Spotlight (style1) */
+
+	.spotlight.style0 {
+		-moz-align-items: -moz-stretch;
+		-webkit-align-items: -webkit-stretch;
+		-ms-align-items: -ms-stretch;
+		align-items: stretch;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-moz-justify-content: -moz-flex-end;
+		-webkit-justify-content: -webkit-flex-end;
+		-ms-justify-content: -ms-flex-end;
+		justify-content: flex-end;
+		position: relative;
+		overflow-x: hidden;
+		text-align: left;
+	}
+
+		.spotlight.style0 .content {
+			padding: 7rem 7rem 5rem 7rem ;
+			-moz-align-self: center;
+			-webkit-align-self: center;
+			-ms-align-self: center;
+			align-self: center;
+			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
+			-moz-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;
+			width: 40%;
+			max-width: 64rem;
+			margin: 0 auto;
+		}
+
+		.spotlight.style0 .image {
+			-moz-flex-grow: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-grow: 0;
+			flex-grow: 0;
+			-moz-flex-shrink: 0;
+			-webkit-flex-shrink: 0;
+			-ms-flex-shrink: 0;
+			flex-shrink: 0;
+			width:60%;
+			min-width: 25rem;
+			border-radius: 0;
+			background-color: white;
+			padding-right: 10px;
+			margin-right: 40px;
+		}
+
+			.spotlight.style0 .image img {
+				-moz-object-fit: cover;
+				-webkit-object-fit: cover;
+				-ms-object-fit: cover;
+				object-fit: cover;
+				-moz-object-position: center;
+				-webkit-object-position: center;
+				-ms-object-position: center;
+				object-position: center;
+				display: block;
+				position: relative;
+				top: auto;
+				left: auto;
+				object-fit: contain;
+				object-position: center;
+				width: 100%;
+				height: 100%;
+				border-radius: 0;
+				background-color: white;
+			}
+
+		@media screen and (max-width: 1680px) {
+
+			.spotlight.style0 .content {
+				padding: 5rem 5rem 3rem 5rem ;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.spotlight.style0 .content {
+				padding: 4rem 4rem 2rem 4rem ;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.spotlight.style0 .content {
+				padding: 3.75rem 3rem 1.75rem 3rem ;
+				width: 50%;
+				min-width: 0;
+			}
+
+			.spotlight.style0 .image {
+				width: 50%;
+				min-width: 0;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.spotlight.style0 .content {
+				padding: 2.5rem 2rem 0.5rem 2rem ;
+			}
+
+		}
+
+	@media screen and (max-width: 736px) and (orientation: portrait) {
+
+		.spotlight.style0 {
+			-moz-flex-direction: column-reverse;
+			-webkit-flex-direction: column-reverse;
+			-ms-flex-direction: column-reverse;
+			flex-direction: column-reverse;
+			text-align: center !important;
+		}
+
+			.spotlight.style0 .content {
+				width: 100%;
+			}
+
+			.spotlight.style0 .image {
+				width: 100%;
+			}
+
+				.spotlight.style0 .image img {
+					position: relative;
+				}
+
+	}
+
+		.spotlight.style0.orient-right {
+			-moz-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+
+	@media screen and (max-width: 736px) and (orientation: portrait) {
+
+		.spotlight.style0.orient-right {
+			-moz-flex-direction: column-reverse;
+			-webkit-flex-direction: column-reverse;
+			-ms-flex-direction: column-reverse;
+			flex-direction: column-reverse;
+		}
+
+	}
+
+		.spotlight.style0.content-align-center {
+			text-align: center;
+		}
+
+		.spotlight.style0.content-align-right {
+			text-align: right;
+		}
+
+		.spotlight.style0.image-position-left .image img {
+			-moz-object-position: left;
+			-webkit-object-position: left;
+			-ms-object-position: left;
+			object-position: left;
+		}
+
+		.spotlight.style0.image-position-right .image img {
+			-moz-object-position: right;
+			-webkit-object-position: right;
+			-ms-object-position: right;
+			object-position: right;
+		}
+
+
 /* Spotlight (style1) */
 
 	.spotlight.style1 {
