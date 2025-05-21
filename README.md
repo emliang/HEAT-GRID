@@ -1,10 +1,21 @@
 # Heatwave Impact on European Electricity Grids
-<!-- [toc] -->
 
+
+For a more detailed view, please visit our [webpage](https://emliang.github.io/HEAT-GRID/webpage/).
+
+
+<!-- ## Table of Contents
+- [Heatwave Impact on European Electricity Grids](#heatwave-impact-on-european-electricity-grids)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Package Requirements](#package-requirements)
+  - [Datasets Requirements](#datasets-requirements)
+  - [Methodology](#methodology)
+  - [Demos](#demos)
+  - [License](#license) -->
 
 ## Overview
-This code repository contains the implementation and analysis for the study of [**<font color="red">HEATWAVE</font>**
-](https://climate.copernicus.eu/heatwaves-brief-introduction) effects on European electricity grids. As climate change increases the frequency, intensity, and duration of heatwaves, it is crucial to understand their impact on electricity grids to enhance societal security and resilience.
+This code repository contains the implementation and analysis for the study of [**HEATWAVE**](https://climate.copernicus.eu/heatwaves-brief-introduction) effects on European electricity grids. As climate change increases the frequency, intensity, and duration of heatwaves, it is crucial to understand their impact on electricity grids to enhance societal security and resilience.
 
 <center>
 <figure>
@@ -13,16 +24,9 @@ This code repository contains the implementation and analysis for the study of [
 </figure>
 </center>
 
-
-
-
 ## Package Requirements
-- The code requires Python packages in [requirements.txt](/requirements.txt)
-- Solver requirement: IPOPT 3.14.16 (https://coin-or.github.io/Ipopt/INSTALL.html)
-
-
-
-
+- Python packages: See [requirements.txt](/requirements.txt)
+- Solver requirement: IPOPT 3.14.16 ([Installation Guide](https://coin-or.github.io/Ipopt/INSTALL.html))
 
 ## Datasets Requirements
 The following table lists the key data sources used in this study:
@@ -36,37 +40,45 @@ The following table lists the key data sources used in this study:
 | [Demand.ninja](https://demand.ninja/) | Future weather-dependent energy demand models |
 | [Atlite](https://github.com/PyPSA/atlite) | Open-source model for renewable generation calculation |
 
-
-
-
-
-
-
 ## Methodology
-![Alt text](webpage/images/Framework_2025.png)
+![Methodology Framework](webpage/images/Framework_2025.png)
+
 The methodology employed in this study includes the following key components:
 
-- **Future Heatwave Projection:** It generates projected heatwave events from 2025 to 2050 based on historical heatwaves from 2019 and 2022.
-- **Future Demand Modeling:** It utilizes [Demand.ninja](https://demand.ninja/) to model power demand considering the weather condition and annual growth.
-- **Renewable Generation:** It leverages existing frameworks from [Atlite](https://github.com/PyPSA/atlite) to calculate renewable generation given weather conditions.
-- **Conductor Thermal Modeling:** It analyzes the impact of elevated temperatures on conductor physical properties and their effects on thermal limits.
-- **Multi-Segment Modeling:** It models the transmission line at segmented levels to identify localized stress points and potential bottlenecks.
-- **Optimal Power Flow Analysis:** It integrates these components to simulate the grid's response under thermal and demand stresses, revealing potential capacity bottlenecks and load shedding regions.
+1. **Future Heatwave Projection**
+   - Generates projected heatwave events from 2025 to 2050
+   - Based on historical heatwaves from 2019 and 2022
 
+2. **Future Demand Modeling**
+   - Utilizes [Demand.ninja](https://demand.ninja/)
+   - Models power demand considering weather conditions and annual growth
 
+3. **Renewable Generation**
+   - Leverages [Atlite](https://github.com/PyPSA/atlite) framework
+   - Calculates renewable generation based on weather conditions
 
+4. **Conductor Thermal Modeling**
+   - Analyzes impact of elevated temperatures on conductor properties
+   - Evaluates effects on thermal limits
 
+5. **Multi-Segment Modeling**
+   - Models transmission lines at segmented levels
+   - Identifies localized stress points and potential bottlenecks
 
+6. **Optimal Power Flow Analysis**
+   - Integrates all components for grid simulation
+   - Reveals capacity bottlenecks and load shedding regions
 
 ## Demos
 The code contains the following [demos](/demos/) for the Methodology:
+
 1. Heatwave generation based on morphing approach
 2. Demand calibration based on demand.ninja
 3. Heat balance equation calculation and visualization
 4. OPF solving by IPOPT with Pyomo-based modeling
 5. A country-level analysis based on the proposed methodology
 
-## Liscence
+## License
 CC-BY-4.0
 
 
