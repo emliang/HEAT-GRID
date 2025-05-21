@@ -21,9 +21,14 @@
 					<section class="banner style5 orient-left content-align-center image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>HEAT-GRID</h1>
+							<h3>Heatwave Impact on European Electricity Grids</h3>
+							<!-- <h3>A comprehensive study of heatwave effects on electricity grids.</h3> -->
 							<p class="major">
-								A comprehensive study of heatwave effects on European electricity grids.
-								As climate change increases the frequency, intensity, and duration of heatwaves, understanding their impact on electricity grids is crucial for enhancing societal security and resilience.</p>
+								<!-- Heatwave Impact on European Electricity Grids -->
+								<!-- Heatwave Effects Analysis Tool for Grid Resilience Investigation and Diagnostics -->
+								<!-- A comprehensive study of heatwave effects on European electricity grids. -->
+								As climate change increases the frequency, intensity, and duration of heatwaves, understanding their impact on electricity grids is crucial for enhancing societal security and resilience.
+							</p>
 							<ul class="actions fit">
 								<li><a href="" class="button big wide smooth-scroll-middle">Paper</a></li>
 								<li><a href="https://github.com/emliang/HEAT-GRID" class="button big wide smooth-scroll-middle">Code</a></li>
@@ -125,28 +130,35 @@
 					</section> -->
 
 				<!-- Four -->
+				<script src="assets/js/viewer.js"></script>
+				<script src="assets/demo_results/demo1.js"></script>
+				<script src="assets/demo_results/demo2.js"></script>
+				<script src="assets/demo_results/demo3.js"></script>
+				<script src="assets/demo_results/demo4.js"></script>
+				<script src="assets/demo_results/demo5.js"></script>
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h2>Demos</h2>
-							<p>Explore our interactive demonstrations showcasing key aspects of our methodology:</p>
+							<p class="major">Explore demonstrations showcasing key aspects of our methodology:</p>
 							<div class="items style1 medium onscroll-fade-in">
 
 								<section>
 									<span class="icon solid style2 major fa-temperature-high"></span>
 									<h3>Heatwave Generation</h3>
 									<div style="display: flex; justify-content: center; gap: 1.25rem; margin-top: 0.5rem; margin-bottom: 0.5rem">
-										<a href="#heatwave-code" class="button small">Code</a>
-										<a href="#heatwave-result" class="button small"">Results</a>
+									  <a href="#heatwave-code" class="button small">Code</a>
+									  <a onclick="showHeatwaveResults()" class="button small">Results</a>
 									</div>
 									<p>Morphing approach for heatwave generation</p>
-								</section>
+								  </section>
+					
 
 								<section>
 									<span class="icon solid style2 major fa-chart-line"></span>
 									<h3>Demand Calibration</h3>
 									<div style="display: flex; justify-content: center; gap: 1.25rem; margin-top: 0.5rem; margin-bottom: 0.5rem">
 										<a href="#demand-code" class="button small">Code</a>
-										<a href="#demand-result" class="button small"">Results</a>
+										<a onclick="showDemandResults()" class="button small"">Results</a>
 									</div>
 									<p>Weather-dependent demand modeling</p>
 								</section>
@@ -156,7 +168,7 @@
 									<h3>Conductor Thermal Model</h3>
 									<div style="display: flex; justify-content: center; gap: 1.25rem; margin-top: 0.5rem; margin-bottom: 0.5rem">
 										<a href="#heatbalance-code" class="button small">Code</a>
-										<a href="#heatbalance-result" class="button small"">Results</a>
+										<a onclick="showThermalResults()" class="button small"">Results</a>
 									</div>
 									<p>Heat flow equation calculation and visualization</p>
 								</section>
@@ -166,7 +178,7 @@
 									<h3>TD-AC-OPF Solving</h3>
 									<div style="display: flex; justify-content: center; gap: 1.25rem; margin-top: 0.5rem; margin-bottom: 0.5rem">
 										<a href="#opf-code" class="button small">Code</a>
-										<a href="#opf-result" class="button small"">Results</a>
+										<a onclick="showOPFResults()" class="button small"">Results</a>
 									</div>
 									<p>Iterative algorithm based on IPOPT with Pyomo-based modeling</p>
 								</section>
@@ -176,12 +188,12 @@
 									<h3>IEEE Grid Analysis</h3>
 									<div style="display: flex; justify-content: center; gap: 1.25rem; margin-top: 0.5rem; margin-bottom: 0.5rem">
 										<a href="#ieee-code" class="button small">Code</a>
-										<a href="#ieee-result" class="button small"">Results</a>
+										<a onclick="showIEEEResults()" class="button small"">Results</a>
 									</div>
 									<p>Toy example in IEEE 30-bus grid with synthetic data </p>
 								</section>
 
-								<section>
+								<!-- <section>
 									<span class="icon solid style2 major fa-globe-europe"></span>
 									<h3>European Grid Analysis</h3>
 									<div style="display: flex; justify-content: center; gap: 1.25rem; margin-top: 0.5rem; margin-bottom: 0.5rem">
@@ -189,14 +201,18 @@
 										<a href="#country-result" class="button small"">Results</a>
 									</div>
 									<p>Comprehensive country-level analysis</p>
-								</section>
+								</section> -->
 							</div>
 						</div>
 					</section>
 
+
+
+
+
 					<section class="spotlight style0 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2>Main Results</h2>
+							<h2>European Grid Results</h2>
 							<p>:</p>
 							<ul>
 								<!-- <li>Future Heatwave Projection (2025-2030)</li> -->
@@ -211,22 +227,14 @@
 					</section>
 
 
-				<!-- Five -->
-					<!-- <section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Package Requirements</h2>
-							<p>To run the code, you'll need:</p>
-							<ul class="alt">
-								<li>Python packages listed in requirements.txt</li>
-								<li>IPOPT 3.14.16 solver</li>
-							</ul>
-						</div>
-					</section> -->
 
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
 						<div class="inner">
-							<p>&copy; HEAT-GRID Project. License: CC-BY-4.0</p>
+							<p>&copy; HEAT-GRID Project. License: CC-BY-4.0 
+								<br>
+								Designed by <a href="https://html5up.net/">HTML5 UP</a>
+							</p>
 						</div>
 					</footer>
 
@@ -240,6 +248,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>

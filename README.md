@@ -1,7 +1,7 @@
 # Heatwave Impact on European Electricity Grids
 
 
-For a more detailed view, please visit our [webpage](https://emliang.github.io/HEAT-GRID/webpage/).
+Please visit our [webpage](https://emliang.github.io/HEAT-GRID/webpage/) for a more detailed view
 
 
 <!-- ## Table of Contents
